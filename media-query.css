@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints (olhar pelo W3C)
+----------------------------------------------
+Pequenas Telas Até 600px
+Celular: De 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: Acima de 1200px
+*/
+
+@media screen and (min-width: 768px) {
+
+    #login {
+
+        display: flex;
+        flex-flow: row-reverse nowrap;
+    }
+
+    #imagem {
+        background-image: url('/imagens/fundo2.avif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: top left;
+        background-color: rgba(0, 0, 0, 0.65);
+        background-blend-mode: darken;
+        width: 50vw;
+        height: 100vh;
+    }
+
+    #formulario {
+        background-color: rgb(0, 0, 0);
+        width: 50vw;
+        height: 100vh;
+    }
+
+    form {
+        /* border: 2px red solid; */
+        flex: 0 0 500px;
+    }
+
+    #login::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(to right, #000000, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    }
+
+    h1 {
+        flex: 1 0 100vw;
+        text-align: center;
+        font-size:3.7em;
+    }
+}
