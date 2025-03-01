@@ -18,7 +18,7 @@ Grandes telas: Acima de 1200px
     }
 
     #imagem {
-        background-image: url('/imagens/fundo2.avif');
+        background-image: url('../images/fundo.avif');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
